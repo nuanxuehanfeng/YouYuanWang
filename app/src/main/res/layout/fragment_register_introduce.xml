@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请用一句话描述一下自己"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="100"
+        android:id="@+id/register_des"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_des1"
+        />
+    <Button
+        android:text="保存"
+       style="@style/button_load"
+        android:id="@+id/register_des_save"/>
+
+</LinearLayout>

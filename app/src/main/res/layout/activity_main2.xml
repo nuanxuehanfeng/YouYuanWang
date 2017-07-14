@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.wangxueshi.youyuanwang.activity.Main2Activity">
+
+    <!--仿沉浸式-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/background_lv"
+        />
+
+    <FrameLayout
+        android:id="@+id/main2_zhanwei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        ></FrameLayout>
+    <RadioGroup
+        android:id="@+id/main2_radiogroup"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F7F7F7"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/main2_rb_find"
+             android:checked="true"
+            android:text="发现"
+            android:drawableTop="@drawable/tab_icon4"
+            style="@style/radiobutton_bottom"
+           />
+        <RadioButton
+            android:id="@+id/main2_rb_dynamic"
+            android:text="动态"
+            android:drawableTop="@drawable/tab_icon2"
+            style="@style/radiobutton_bottom"
+            />
+        <RadioButton
+            android:id="@+id/main2_rb_message"
+            android:text="信箱"
+            android:drawableTop="@drawable/tab_icon4"
+            style="@style/radiobutton_bottom"
+            />
+        <RadioButton
+            android:id="@+id/main2_rb_me"
+            android:text="我的"
+            android:drawableTop="@drawable/tab_icon5"
+            style="@style/radiobutton_bottom"
+            />
+
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

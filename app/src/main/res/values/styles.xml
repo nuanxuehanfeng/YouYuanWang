@@ -1,0 +1,58 @@
+<resources>
+    <style name="CAppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+<!--沉浸式-->
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <!-- Base application theme. -->
+
+
+
+
+
+
+    <!--登录 下一步 注册按钮-->
+    <style name="button_load">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:background">@drawable/qa_send_question_nor</item>
+        <item name="android:textColor">@color/text_bai</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">2dp</item>
+
+
+
+    </style>
+
+    <!--edittext  单行 类型 距离上 hit颜色，字体颜色-->
+     <style name="edittext_hint">
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColorHint">@color/hint_qian_hui</item>
+        <item name="android:textColor">@color/text_hei</item>
+    </style>
+    <!--edittext  单行 类型 距离上 hit颜色，字体颜色-->
+    <style name="radiobutton_bottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/radiobutton_selector</item>
+    </style>
+
+
+
+</resources>

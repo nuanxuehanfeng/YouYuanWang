@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="昵称"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/text_hei"
+
+        />
+    <EditText
+        android:textSize="17sp"
+        android:text="我是我"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="text"
+        android:id="@+id/registerinfor_et_nickname"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密码"
+            android:textSize="20sp"
+            android:textColor="@color/text_hei"
+
+            />
+        <com.bawei.wangxueshi.youyuanwang.widget.EditTextWithPassWord
+            android:textSize="17sp"
+            android:text="1111"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:id="@+id/registerinfor_et_password"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="性别"
+            android:textSize="20sp"
+            android:textColor="@color/text_hei"
+            />
+        <TextView
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:id="@+id/registerinfor_tv_sex"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="男"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="年龄"
+
+    android:textSize="20sp"
+    android:textColor="@color/text_hei"
+    />
+<TextView
+    android:imeOptions="actionNext"
+    android:layout_marginRight="10dp"
+    android:maxLines="1"
+    android:textSize="17sp"
+    android:id="@+id/registerinfor_tv_age"
+    android:layout_weight="1"
+    android:gravity="right"
+    android:text="20"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="地区"
+            android:textSize="20sp"
+            android:textColor="@color/text_hei"
+            />
+        <TextView
+            android:textSize="17sp"
+            android:id="@+id/registerinfor_tv_area"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+           android:hint="请选择"
+            android:textColorHint="@color/text_hui"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="简介"
+            android:textSize="20sp"
+            android:textColor="@color/text_hei"
+            />
+        <TextView
+            android:id="@+id/registerinfor_tv_introduce"
+            android:hint="点击输入"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        style="@style/button_load"
+        android:text="下一步"
+        android:id="@+id/registerinfor_bt_next"
+        />
+
+</LinearLayout>
+
+
+

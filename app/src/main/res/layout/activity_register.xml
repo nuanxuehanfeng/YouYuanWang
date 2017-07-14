@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.wangxueshi.youyuanwang.activity.RegisterActivity">
+    <!--仿沉浸式-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#72C3C7"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#72C3C7"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/register_bt_fanhui"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/register_tv_load"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="登录"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+<FrameLayout
+    android:id="@+id/register_zhanwei"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></FrameLayout>
+
+    <!---->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="新用户注册"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="30sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="注册成功后，性别不可以更改"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="15sp" />-->
+
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/regist_rb_man"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="男" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/regist_rb_woman"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="女" />-->
+
+    <!--</RadioGroup>-->
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_18"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_19"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_20"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_21"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_22"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_23"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_24"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="18岁" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/regist_bt_25"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="118岁" />-->
+        <!--</LinearLayout>-->
+    <!--</HorizontalScrollView>-->
+    <!--<Button-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@drawable/btn_background"-->
+        <!--android:id="@+id/regist_bt_ok"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="确定"-->
+        <!--/>-->
+
+</LinearLayout>

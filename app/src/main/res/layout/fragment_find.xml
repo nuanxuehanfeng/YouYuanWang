@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/background_lv"
+    >
+    <TextView
+        android:text="好友"
+        android:textSize="20sp"
+
+        android:textColor="@color/text_bai"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/f_find_tv_zhuan"
+        android:gravity="center"
+        android:src="@mipmap/good_type_linear"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/text_bai"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/f_find_springview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/f_find_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bawei.wangxueshi.youyuanwang.activity.PersonMessageActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="400dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/activity_person_message_iv_head"
+            android:src="@drawable/user_icon_default"
+            />
+        <Button
+            android:id="@+id/activity_person_message_tv_fanhui"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:background="@drawable/new_btn_back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+      android:background="@color/text_bai"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:id="@+id/activity_person_message_linear_photos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+            <ImageView
+                android:id="@+id/activity_person_message_linear_photos_one"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/personage_photo_list_select_default"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@color/hint_qian_hui"
+        android:padding="10dp"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/text_bai"
+        >
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="昵称"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/text_hei"
+                />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:id="@+id/activity_person_message_tv_nickname"
+                android:textSize="17sp"
+                android:text="我是我"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_qian_hui"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/text_bai"
+            >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="年龄"
+                android:textSize="20sp"
+                android:textColor="@color/text_hei"
+                />
+            <TextView
+
+                android:id="@+id/activity_person_message_tv_age"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="10岁"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_qian_hui"/>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/text_bai"
+            >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="性别"
+
+                android:textSize="20sp"
+                android:textColor="@color/text_hei"
+                />
+            <TextView
+
+                android:id="@+id/activity_person_message_tv_sex"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:gravity="right"
+                android:text="男"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_qian_hui"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/text_bai"
+            >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="地区"
+                android:textSize="20sp"
+                android:textColor="@color/text_hei"
+                />
+            <TextView
+                android:id="@+id/activity_person_message_tv_area"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/hint_qian_hui"/>
+           </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/text_bai"
+            >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="简介"
+                android:textSize="20sp"
+                android:textColor="@color/text_hei"
+                />
+            <TextView
+                android:id="@+id/activity_person_message_tv_desc"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/hint_qian_hui"/>
+         </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/activity_person_message_bt_message"
+             android:layout_marginRight="20dp"
+            android:background="@drawable/msgbox_read_msg_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/activity_person_message_bt_hello"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/msgbox_sayhello_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/activity_person_message_bt_gonext"
+            android:background="@drawable/msgbox_prefect_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+</RelativeLayout>

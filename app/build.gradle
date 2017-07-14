@@ -1,0 +1,174 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'x86' , 'armeabi', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+
+        applicationId "com.bawei.wangxueshi.youyuanwang"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    /*针对greenDao的一些配置*/
+    greendao {
+        schemaVersion 1 //数据库版本号
+        daoPackage 'com.bawei.wangxueshi.youyuanwang' //自动生成的工具类的包名
+        targetGenDir 'src/main/java/dao' //路径
+    }
+
+
+    signingConfigs {
+        MyConfig {
+            try {
+                storeFile file('E:\\keystore\\youyuanwang.jks')
+                storePassword 'wang123456'
+                keyAlias 'you'
+                keyPassword 'wang123456'
+            } catch (ex) {
+                throw new InvalidUserDataException(ex.toString())
+            }
+        }
+    }
+
+
+
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.MyConfig
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.MyConfig
+        }
+    }
+}
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+//dependencies {
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+//    compile 'com.android.support:support-v4:26.0.0-alpha1'
+//    compile 'com.android.support:design:26.0.0-alpha1'
+//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+//    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+//    compile 'com.squareup.retrofit2:converter-scalars:+'
+//    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+//    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
+//    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+//    compile 'com.jakewharton:butterknife:8.6.0'
+//    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//    testCompile 'junit:junit:4.12'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+//    compile 'com.google.code.gson:gson:2.8.1'
+//    //这个是城市列表的一种
+//    compile'liji.library.dev:citypickerview:0.1.0'
+//
+////防止抖动触摸
+//    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+//
+////动态权限
+//    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+//    compile("com.github.hotchemi:permissionsdispatcher:2.4.0")
+ //  greendao数据库
+//compile 'com.liaoinstan.springview:library:1.2.6'
+//   compile 'org.greenrobot:greendao:3.2.2'
+//}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:+'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
+
+//    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+
+    compile 'com.jakewharton:butterknife:8.6.0'
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:2.4.0"
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    compile 'liji.library.dev:citypickerview:0.1.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+
+  compile 'org.greenrobot:greendao:3.2.2'
+
+    compile 'com.liaoinstan.springview:library:1.2.6'
+
+
+    compile 'com.github.chrisbanes:PhotoView:2.1.2'
+
+//腾讯bugly
+    compile 'com.tencent.bugly:crashreport:2.6.5'
+    compile 'com.tencent.bugly:nativecrashreport:3.3.0'
+
+//测试内存泄漏
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+
+
+//    图片框架
+    compile 'com.facebook.fresco:fresco:1.3.0'
+
+// 在 API < 14 上的机器支持 WebP 时，需要添加
+//    compile 'com.facebook.fresco:animated-base-support:1.3.0'
+
+    // 支持 GIF 动图，需要添加
+    compile 'com.facebook.fresco:animated-gif:1.3.0'
+
+    // 支持 WebP （静态图+动图），需要添加
+    compile 'com.facebook.fresco:animated-webp:1.3.0'
+    compile 'com.facebook.fresco:webpsupport:1.3.0'
+
+    // 仅支持 WebP 静态图，需要添加
+//    compile 'com.facebook.fresco:webpsupport:0.12.0'
+
+
+    compile 'com.alibaba:fastjson:1.2.34'
+
+
+
+}

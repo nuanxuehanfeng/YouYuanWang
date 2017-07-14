@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background_lv">#52B2BF</color>
+    <color name="background_shen_lv">#52B2BF</color>
+    <color name="background_qian_lv">#99ffcc</color>
+
+
+    <color name="text_hui">#A2A2A2</color>
+    <color name="text_hei">#000000</color>
+    <color name="text_bai">#ffffff</color>
+    <color name="hint_qian_hui">#E0E0E0</color>
+
+    <color name="radio_button_hui">#BABBBF</color>
+    <color name="radio_button_lv">#71C3C8</color>
+
+
+</resources>

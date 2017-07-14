@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upload_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.bawei.wangxueshi.youyuanwang.activity.UploadPhotoActivity">
+
+
+    <!--仿沉浸式-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#72C3C7"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#72C3C7"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/uploadphone_bt_fanhui"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+<ImageView
+    android:layout_marginTop="20dp"
+    android:id="@+id/uploadphoto_iv_face"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/user_icon_default"
+    />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="一张清晰的图片可以吸引异性"
+        android:textColor="@color/background_qian_lv"
+        />
+    <Button
+        android:id="@+id/uploadphone_bt_camera"
+        android:text="相机拍照"
+        android:gravity="center"
+          style="@style/button_load"
+        />
+    <Button
+        style="@style/button_load"
+        android:id="@+id/uploadphone_bt_up"
+        android:text="本地上传"
+        android:gravity="center"
+        />
+    <Button
+        style="@style/button_load"
+        android:id="@+id/uploadphone_bt_mephone"
+        android:text="我的相册"
+        android:gravity="center"
+        />
+</LinearLayout>
